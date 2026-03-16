@@ -4,9 +4,9 @@ import { Users, Mail } from "lucide-react";
 const members = [
   { name: "Jimmy Prince Shimwa", email: "p.shimwa@alustudent.com", initials: "JS" },
   { name: "Rogan Munya Buranga", email: "r.munya@alustudent.com", initials: "RB" },
-  { name: "Rebecca Benegusenga", email: "r.benegusen@alustudent.com", initials: "RB" },
+  { name: "Rebecca Umuragwa Benegusenga", email: "r.benegusen@alustudent.com", initials: "RB" },
   { name: "Sage Rusagara", email: "s.rusagara@alustudent.com", initials: "SR" },
-  { name: "Ruth Mahoro", email: "r.mahoro@alustudent.com", initials: "RM" },
+  { name: "Ruth Nyana Mahoro", email: "r.mahoro@alustudent.com", initials: "RM" },
 ];
 
 const colors = [
