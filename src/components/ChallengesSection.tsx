@@ -22,13 +22,13 @@ const challenges = [
   },
   {
     num: "04",
-    title: "Launch your mission",
+    title: "Hunting for Treasure",
     icon: Rocket,
     description: "Developing and testing our prototype solution for climate-smart agriculture, gathering feedback from local farming communities.",
   },
   {
     num: "05",
-    title: "Pitching & Communication",
+    title: "Launch your mission",
     icon: PresentationIcon,
     description: "Presenting our solution to stakeholders, refining our pitch, and communicating the impact of our climate-smart agricultural approach.",
   },
