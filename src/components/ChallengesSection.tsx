@@ -28,14 +28,14 @@ const challenges = [
     title: "Hunting for Treasure",
     icon: Rocket,
     description: "Developing and testing our prototype solution for climate-smart agriculture, gathering feedback from local farming communities.",
-    link: null,
+    link: "https://youtu.be/-3OZQC3eyL0",
   },
   {
     num: "05",
     title: "Launch your mission",
     icon: PresentationIcon,
     description: "Presenting our solution to stakeholders, refining our pitch, and communicating the impact of our climate-smart agricultural approach.",
-    link: null,
+    link: "https://youtu.be/QnPfxN-l5lA",
   },
   {
     num: "06",
