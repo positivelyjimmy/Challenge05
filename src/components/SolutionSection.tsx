@@ -16,7 +16,15 @@ const solutions = [
 
 const SolutionSection = () => (
   <section id="solution" className="py-24 px-6 relative overflow-hidden">
-    <div className="max-w-6xl mx-auto">
+
+    {/* Background image */}
+    <div
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/solution-bg.jpeg')" }}    />
+    {/* Dark overlay to keep text readable */}
+    <div className="absolute inset-0 bg-black/70" />
+
+    <div className="max-w-6xl mx-auto relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +51,7 @@ const SolutionSection = () => (
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="group bg-card border border-border rounded-2xl p-8 hover:border-primary/50 transition-colors relative overflow-hidden"
+            className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-8 hover:border-primary/50 transition-colors relative overflow-hidden"
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-gold opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">

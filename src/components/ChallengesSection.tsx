@@ -47,8 +47,17 @@ const challenges = [
 ];
 
 const ChallengesSection = () => (
-  <section id="challenges" className="py-24 px-6">
-    <div className="max-w-6xl mx-auto">
+  <section id="challenges" className="py-24 px-6 relative overflow-hidden">
+
+    {/* Background image */}
+    <div
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/team-bg.jpeg')" }}
+    />
+    {/* Dark overlay */}
+    <div className="absolute inset-0 bg-black/75" />
+
+    <div className="max-w-6xl mx-auto relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +85,7 @@ const ChallengesSection = () => (
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             onClick={() => c.link && window.open(c.link, "_blank")}
-            className={`bg-card border border-border rounded-2xl p-6 group hover:border-primary/40 transition-all hover:glow-gold relative ${c.link ? "cursor-pointer" : "cursor-default"}`}
+            className={`bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 group hover:border-primary/40 transition-all hover:glow-gold relative ${c.link ? "cursor-pointer" : "cursor-default"}`}
           >
             {c.link && (
               <span className="absolute top-3 right-3 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
